@@ -1,0 +1,414 @@
+extends include/layout.jade
+
+block content
+	section.slider
+		.swiper-container.slider
+			.swiper-wrapper
+				.swiper-slide.flex.middle-xs(style="background-image: url('img/slide.png')")
+					.container
+						.row
+							.col-md-7.col-sm-12.col-xs-12
+								.slider__block.flex.middle-xs
+									div
+										h2 Инженерные изыскания
+										p высокое качество<br>по разумной цене!
+										span Уважаемые дамы и господа, наша компания рада приветствовать всех, кто посетил странички нашего сайта!
+										div
+											a(href="#") Получить консультацию
+							.col-md-5.col-sm-12.col-xs-12
+								h1 Геодезия
+				.swiper-slide(style="background-image: url('img/slide.png')")
+				.swiper-slide(style="background-image: url('img/slide.png')")
+			// Add Pagination
+			.swiper-pagination
+			// Add Arrows
+			.swiper-button-next
+				i.icon-right-arrow
+			.swiper-button-prev
+				i.icon-left-arrow
+	section.home-block
+		.container
+			.row.center-xs
+				.col-md-4.col-sm-4.col-xs-12
+					.home-block__image
+						img(src="img/geology.png", alt="")
+					.home-block__heading
+						h2 Геология
+						p от <span>1000</span> руб./п.м
+					.home-block__content
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nulla nisi, viverra eget erat et, dictum egestas diam. Nunc elementum fermentum lacus, a porttitor urna porttitor non. Sed egestas leo vitae convallis mollis. Nam et neque nunc. Praesent sit amet urna a neque lobortis convallis sed eu nunc. Fusce lobortis hendrerit vulputate. Ut volutpat vehicula massa at suscipit. Etiam vulputate, urna quis finibus malesuada, mi velit aliquet elit, a aliquet nisl risus et ligula. Nunc cursus leo ut nisi viverra eleifend in ut sem. Nunc et ornare quam. Sed convallis nulla felis, ac feugiat arcu sagittis quis.
+					a.btn.btn-primary(href="#") Получить консультацию
+				.col-md-4.col-sm-4.col-xs-12
+					.home-block__image
+						img(src="img/geodezy.png", alt="")
+					.home-block__heading
+						h2 Геодезия
+						p от <span>12000</span> руб./п.м
+					.home-block__content
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nulla nisi, viverra eget erat et, dictum egestas diam. Nunc elementum fermentum lacus, a porttitor urna porttitor non. Sed egestas leo vitae convallis mollis. Nam et neque nunc. Praesent sit amet urna a neque lobortis convallis sed eu nunc. Fusce lobortis hendrerit vulputate. Ut volutpat vehicula massa at suscipit. Etiam vulputate, urna quis finibus malesuada, mi velit aliquet elit, a aliquet nisl risus et ligula. Nunc cursus leo ut nisi viverra eleifend in ut sem. Nunc et ornare quam. Sed convallis nulla felis, ac feugiat arcu sagittis quis.
+					a.btn.btn-primary(href="#") Получить консультацию
+				.col-md-4.col-sm-4.col-xs-12
+					.home-block__image
+						img(src="img/ekology.png", alt="")
+					.home-block__heading
+						h2 Экология
+						p от <span>40000</span> руб./п.м
+					.home-block__content
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nulla nisi, viverra eget erat et, dictum egestas diam. Nunc elementum fermentum lacus, a porttitor urna porttitor non. Sed egestas leo vitae convallis mollis. Nam et neque nunc. Praesent sit amet urna a neque lobortis convallis sed eu nunc. Fusce lobortis hendrerit vulputate. Ut volutpat vehicula massa at suscipit. Etiam vulputate, urna quis finibus malesuada, mi velit aliquet elit, a aliquet nisl risus et ligula. Nunc cursus leo ut nisi viverra eleifend in ut sem. Nunc et ornare quam. Sed convallis nulla felis, ac feugiat arcu sagittis quis.
+					a.btn.btn-primary(href="#") Получить консультацию
+	section.services
+		.container
+			.row.center-xs
+				.col-xs-6.center-xs
+					.heading
+						h2 Перечень услуг
+							span  от Пушкино-трест
+						hr
+						p Quisque dignissim nibh augue, tristique laoreet mauris aliquam at. Nulla at ligula sed elit luctus euismod. Phasellus vitae magna id nisl iaculis viverra quis in odio.
+				.col-xs-10
+					#tabs.tabs
+						ul.tabs__list.flex.center-xs
+							li
+								a(href='#tabs-1') Геологиеские
+							li
+								a(href='#tabs-2') Экологические
+							li
+								a(href='#tabs-3') Геодезические
+							li
+								a(href='#tabs-4') Гидрометеорологические
+							li
+								a(href='#tabs-5') Обследование зданий
+						#tabs-1.tab
+							.row
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/people.png", alt="")
+										.tab__block__content
+											p Более 3000  контактов за 10 лет работы
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/user.png", alt="")
+										.tab__block__content
+											p Квалифицированные и опытные инженеры
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/like.png", alt="")
+										.tab__block__content
+											p Сжатый срок-высокое качество
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/chat.png", alt="")
+										.tab__block__content
+											p Лицензии и отзывы
+						#tabs-2.tab
+							.row
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/people.png", alt="")
+										.tab__block__content
+											p Более 3000  контактов за 10 лет работы
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/user.png", alt="")
+										.tab__block__content
+											p Квалифицированные и опытные инженеры
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/like.png", alt="")
+										.tab__block__content
+											p Сжатый срок-высокое качество
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/chat.png", alt="")
+										.tab__block__content
+											p Лицензии и отзывы
+						#tabs-3.tab
+							.row
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/people.png", alt="")
+										.tab__block__content
+											p Более 3000  контактов за 10 лет работы
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/user.png", alt="")
+										.tab__block__content
+											p Квалифицированные и опытные инженеры
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/like.png", alt="")
+										.tab__block__content
+											p Сжатый срок-высокое качество
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/chat.png", alt="")
+										.tab__block__content
+											p Лицензии и отзывы
+						#tabs-4.tab
+							.row
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/people.png", alt="")
+										.tab__block__content
+											p Более 3000  контактов за 10 лет работы
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/user.png", alt="")
+										.tab__block__content
+											p Квалифицированные и опытные инженеры
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/like.png", alt="")
+										.tab__block__content
+											p Сжатый срок-высокое качество
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/chat.png", alt="")
+										.tab__block__content
+											p Лицензии и отзывы
+						#tabs-5.tab
+							.row
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/people.png", alt="")
+										.tab__block__content
+											p Более 3000  контактов за 10 лет работы
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/user.png", alt="")
+										.tab__block__content
+											p Квалифицированные и опытные инженеры
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/like.png", alt="")
+										.tab__block__content
+											p Сжатый срок-высокое качество
+								.col-md-3.col-sm-3.col-xs-12
+									.tab__block
+										.tab__block__image
+											img(src="img/chat.png", alt="")
+										.tab__block__content
+											p Лицензии и отзывы
+	section.step
+		.container
+			.row.center-xs
+				.col-xs-6
+					.heading
+						h2 Этапы
+							span  работы
+						hr
+				.col-xs-12
+					.step__block
+						.step__block__content.step__block-1
+							i.icon-phone
+							span Оставьте заявку
+							p или позвоните нам: 8(861) 22-66-999
+						.step__block__content.step__block-2
+							i.icon-calendar
+							span Получите консультацию
+							p и согласуйте дату приезда бригады геологов
+						.step__block__content.step__block-3
+							i.icon-wishlist
+							span Прием бригады на участке
+							p и подписание договора
+						.step__block__content.step__block-4
+							i.icon-people
+							span Отчет и консультация
+							p уже через <b>7 дней</b>
+	section.doc
+		.container
+			.row.center-xs.middle-xs
+				.col-xs-12
+					.heading
+						h2 Документация
+							span  и CPO
+						hr
+						p Все необходимые Документы и допуски
+				.col-xs-12
+					#tabs-doc.tabs
+						.row
+							.col-md-4.col-sm-6.col-xs-12.last-md.middle-xs.flex
+								ul.tabs__list.center-xs
+									li
+										a.btn(href="#tabs-doc-1") <i class="icon-download-file"></i> Техническое задание экология (40 kb)
+									li
+										a.btn(href="#tabs-doc-2") <i class="icon-download-file"></i> Техническое задание топосъемка (15 kb)
+									li
+										a.btn(href="#tabs-doc-3") <i class="icon-download-file"></i> Техническое задание на геологию (67 kb)
+									li
+										a.btn(href="#tabs-doc-4") <i class="icon-download-file"></i> СРО 14.08.2013 (4857 кb)
+							.col-sm-6.col-md-6.col-xs-12
+								.gallery
+									#tabs-doc-1.tab
+										a(href="img/doc.png")
+											img(src="img/doc.png", alt="")
+									#tabs-doc-2.tab
+										a(href="img/doc.png")
+											img(src="img/doc.png", alt="")
+									#tabs-doc-3.tab
+										a(href="img/doc.png")
+											img(src="img/doc.png", alt="")
+									#tabs-doc-4.tab
+										a(href="img/doc.png")
+											img(src="img/doc.png", alt="")
+					//- a.btn(href="#") <i class="download-file"></i> Техническое задание экология (40 kb)
+					//- a.btn(href="#") <i class="download-file"></i> Техническое задание топосъемка (15 kb)
+					//- a.btn(href="#") <i class="download-file"></i> Техническое задание на геологию (67 kb)
+					//- a.btn(href="#") <i class="download-file"></i> СРО 14.08.2013 (4857 кb)
+	section.photo-works
+		.container
+			.row.center-xs
+				.col-xs-6
+					.heading
+						h2 Фото
+							span  выполненных объектов
+						hr
+						p Компания Пушкино-Трест находится на рынке больше 7 лет,  занимаясь изысканиями как для крупных государственных организаций так и для частных лиц. Фото некоторых наших объектов.
+			.row.gallery
+				.col-md-3.col-sm-6.col-xs-12.center-xs
+					.photo-works__image
+						a(href="img/work.png")
+							img(src="img/work.png", alt="")
+							.black-bg
+				.col-md-3.col-sm-6.col-xs-12.center-xs
+					.photo-works__image
+						a(href="img/work.png")
+							img(src="img/work.png", alt="")
+							.black-bg
+				.col-md-3.col-sm-6.col-xs-12.center-xs
+					.photo-works__image
+						a(href="img/work.png")
+							img(src="img/work.png", alt="")
+							.black-bg
+				.col-md-3.col-sm-6.col-xs-12.center-xs
+					.photo-works__image
+						a(href="img/work.png")
+							img(src="img/work.png", alt="")
+							.black-bg
+				.col-md-3.col-sm-6.col-xs-12.center-xs
+					.photo-works__image
+						a(href="img/work.png")
+							img(src="img/work.png", alt="")
+							.black-bg
+				.col-md-3.col-sm-6.col-xs-12.center-xs
+					.photo-works__image
+						a(href="img/work.png")
+							img(src="img/work.png", alt="")
+							.black-bg
+				.col-md-3.col-sm-6.col-xs-12.center-xs
+					.photo-works__image
+						a(href="img/work.png")
+							img(src="img/work.png", alt="")
+							.black-bg
+				.col-md-3.col-sm-6.col-xs-12.center-xs
+					.photo-works__image
+						a(href="img/work.png")
+							img(src="img/work.png", alt="")
+							.black-bg
+	section.review
+		.container
+			.row
+				.col-xs-12
+					h3 Отзывы
+				.col-xs-12
+					.swiper-container.review-slider
+						.swiper-wrapper
+							.swiper-slide
+								.review__block
+									h4.review__block__user Серега Смирнов
+									.review__block__star
+										i.icon-star
+										i.icon-star
+										i.icon-star
+										i.icon-star
+										i.icon-star
+										span Быстро и качественно
+									p <b>Достоинства:</b> Созвонились, обговорил, приехала бригада и провела изыскания. Через неделю отчет готов, супер!
+									p <b>Недостатки:</b> Нету
+							.swiper-slide
+								.review__block
+									h4.review__block__user Кузнецов Андрей
+									.review__block__star
+										i.icon-star
+										i.icon-star
+										i.icon-star
+										i.icon-star
+										i.icon-star.none
+										span Качество работ
+									p <b>Достоинства:</b> Очень быстро все прошло. Заказал, через полчаса перезвонили и начали работать
+									p <b>Недостатки:</b> Не сразу нашел офис
+							.swiper-slide
+								.review__block
+									h4.review__block__user Кузнецов Андрей
+									.review__block__star
+										i.icon-star
+										i.icon-star
+										i.icon-star
+										i.icon-star
+										i.icon-star.none
+										span Качество работ
+									p <b>Достоинства:</b> Очень быстро все прошло. Заказал, через полчаса перезвонили и начали работать
+									p <b>Недостатки:</b> Не сразу нашел офис
+						.swiper-pagination
+						.swiper-button-next
+						.swiper-button-prev
+	section.articles-home
+		.container
+			.row
+				.col-xs-12
+					h3 Последние новости
+					span.articles-home__heading Статьи
+			.row
+				.col-md-3.col-sm-6.col-xs-12
+					.articles-home__block
+						.articles-home__block__image
+							img(src="img/article-photo.png", alt="")
+						.articles-home__block__content
+							h4 Собственный парк буровых установок
+							p По окончанию всего комплекса работ по инженерно-геологическим исследованиям Вы получите Технический отчет об инженерно- геологических изысканиях на бумажном и электронном носителе. Технический отчет составляется в соответствии с требованиями действующих нормативных документов.
+						a(href="#").btn Читать статью
+				.col-md-3.col-sm-6.col-xs-12
+					.articles-home__block
+						.articles-home__block__image
+							img(src="img/article-photo.png", alt="")
+						.articles-home__block__content
+							h4 Собственный парк буровых установок
+							p По окончанию всего комплекса работ по инженерно-геологическим исследованиям Вы получите Технический отчет об инженерно- геологических изысканиях на бумажном и электронном носителе. Технический отчет составляется в соответствии с требованиями действующих нормативных документов.
+						a(href="#").btn Читать статью
+				.col-md-3.col-sm-6.col-xs-12
+					.articles-home__block
+						.articles-home__block__image
+							img(src="img/article-photo.png", alt="")
+						.articles-home__block__content
+							h4 Собственный парк буровых установок
+							p По окончанию всего комплекса работ по инженерно-геологическим исследованиям Вы получите Технический отчет об инженерно- геологических изысканиях на бумажном и электронном носителе. Технический отчет составляется в соответствии с требованиями действующих нормативных документов.
+						a(href="#").btn Читать статью
+				.col-md-3.col-sm-6.col-xs-12
+					.articles-home__block
+						.articles-home__block__image
+							img(src="img/article-photo.png", alt="")
+						.articles-home__block__content
+							h4 Собственный парк буровых установок
+							p По окончанию всего комплекса работ по инженерно-геологическим исследованиям Вы получите Технический отчет об инженерно- геологических изысканиях на бумажном и электронном носителе. Технический отчет составляется в соответствии с требованиями действующих нормативных документов.
+						a(href="#").btn Читать статью
+
+

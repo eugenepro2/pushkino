@@ -1,0 +1,36 @@
+extends include/layout.jade
+
+block content
+	section.photo-page
+		.container
+			.row.center-xs
+				.col-xs-7.center-xs
+					.heading
+						h2 Наши
+							span  фото
+						hr
+			.gallery.photo-page__block
+				.row
+					+photo('img/photo.png')
+					+photo('img/photo.png')
+					+photo('img/photo.png')
+					+photo('img/photo.png')
+					+photo('img/photo.png')
+					+photo('img/photo.png')
+					+photo('img/photo.png')
+					+photo('img/photo.png')
+					+photo('img/photo.png')
+					+photo('img/photo.png')
+					+photo('img/photo.png')
+					+photo('img/photo.png')
+			.row
+				.col-xs-12
+					.pagination.middle-xs.center-xs
+						span Страница
+						input(type="text" placeholder="2")
+						span из 12
+						.left-right
+							a.left
+								i.icon-left-arrow
+							a.right
+								i.icon-right-arrow

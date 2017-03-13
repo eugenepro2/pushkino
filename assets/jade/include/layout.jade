@@ -1,0 +1,150 @@
+mixin article(title, src, text)
+	.col-md-6
+		.articles-page__block
+			h3= title
+			.row
+				.col-md-4 
+					.articles-page__block__image
+						img(src=src, alt="")
+				.col-md-8
+					.articles-page__block__text
+						p= text
+						a(href="article.html") Читать
+
+mixin photo(src)
+	.col-md-3.col-sm-3.col-xs-12
+		a(href=src)
+			img(src=src, alt="")
+			.black-bg
+doctype
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(content='width=device-width, initial-scale=1.0, user-scalable=no', name='viewport')
+		title Пушкино
+		link(rel="stylesheet", href="css/flexboxgrid.min.css")
+		link(rel="stylesheet", href="css/normalize.min.css")
+		link(rel="stylesheet", href="css/swiper.min.css")
+		link(rel="stylesheet", href="css/jquery-ui.min.css")
+		link(rel="stylesheet", href="css/baguetteBox.min.css")
+		link(rel="stylesheet", href="css/select2.min.css")
+		link(rel="stylesheet", href="css/styles.css")
+		link(rel="stylesheet", href="css/fonts.css")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800,900")
+	body
+		#menu.slideout-menu
+			.row
+				ul.menu
+					li
+						a(href="/") Главная
+					li
+						a(href="about-us.html") О нас
+					li
+						a(href="price.html") Цены
+					li
+						a(href="#") Фотогалерея
+					li
+						a(href="news.html") Новости
+					li
+						a(href="contact.html") Контакты
+					li
+						a(href="#") Горячие предложения
+					li
+						a(href="#") Хиты
+					li
+						a(href="#") Новинки
+					li
+						a(href="#") Поездки
+					li
+						a(href="#") Направления
+		#panel
+			header.header
+				.container
+					.row
+						.col-md-1.col-sm-1.col-xs-12
+							.header__logo
+								img(src="img/logo.png", alt="")
+						.col-md-11.col-sm-11.col-xs-12
+							.row.middle-xs.center-xs
+								.col-md-3.col-sm-1.col-xs-12
+								.col-md-4.col-sm-5.col-xs-12
+									a.btn(href="#") Скачать ТЗ
+									a.btn(href="#") Заказать звонок
+								.col-md-2.col-sm-3.col-xs-12.flex.middle-xs.center-xs
+									i.icon-email
+									span.header__email geo@pushkino-trest.ru
+								.col-md-3.col-sm-3.col-xs-12.flex.middle-xs.end-xs
+									i.icon-call
+									span.header__phone 8 495 201 13 12
+							.row.middle-xs
+								.col-md-8.col-sm-10.col-xs-12
+									nav
+										ul.header__menu.flex
+											li
+												a(href="/") Главная
+											li
+												a(href="about-us.html") О компании
+											li
+												a(href="articles.html") Статьи
+											li
+												a(href="cpo.html") CPO
+											li
+												a(href="#") Наши работы
+											li
+												a(href="photo.html") Фото
+											li
+												a(href="price.html") Цены
+											li
+												a(href="contact.html") Контакты
+								.col-md-4.col-sm-2.col-xs-12.end-xs
+									form
+										input(type="text" placeholder="Поиск...")
+										button.icon-search
+
+			block content
+			footer.footer
+				.container
+					.row
+						.col-md-3
+							.footer__logo
+								img(src="img/logo-footer.png", alt="")
+								p © ООО "ПУШКИНО ТРЕСТ" 2015<br>С ВАМИ С 1995 ГОДА<br>ВСЕ ПРАВА ЗАЩИЩЕНЫ.
+						.col-md-9
+							.row.footer__form
+								.col-xs-12
+									p Получить шаблон технического задания на геодезические, геологические и экологические изыскания
+									form.middle-xs
+										input(type="text" placeholder="Ваш Email")
+										input.btn(type="submit" value="Получить шаблон ТЗ")
+							.row.footer__contact
+								.col-md-3
+									h4 Контакты
+									.row
+										.col-md-2
+											i.icon-phone
+										.col-md-10
+											p +56878879890Б<br>+56878879890
+										.col-md-2
+											i.icon-mail
+										.col-md-10
+											p geo-kompleks@mail.ru
+								.col-md-3
+									h4 Разработка и дизайн
+									a(href="#")
+										img(src="img/logo-weber.png", alt="")
+								.col-md-6.end-xs
+									a(href="").map-site Карта сайта
+					
+
+			
+		
+		script(src="js/jquery.min.js")
+		script(src="js/baguetteBox.min.js")
+		script(src="js/select2.full.min.js")
+		script(src="js/jquery-ui.min.js")
+		script(src="js/swiper.min.js")
+		script(src="js/slideout.min.js")
+		script(src="js/main.js")
+
+
+		block script

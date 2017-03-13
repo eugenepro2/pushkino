@@ -1,0 +1,31 @@
+extends include/layout.jade
+
+block content
+	section.contact-page
+		.container
+			.row.center-xs
+				.col-xs-6.center-xs
+					.heading
+						h2 Наши
+							span  Контакты
+						hr
+				.col-xs-12.start-xs
+					p Адрес: Россия, Московская область, г.Пушкино, ул. Лермонтова 37а
+					p Телефон: 8 495 201 13 12
+					p Email: 
+						a(href="mailto:geo@pushkino-trest.ru") geo@pushkino-trest.ru
+			.row
+				.col-sm-8.col-xs-12
+					.contact-page__map
+						iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2229.7226832074525!2d37.844365315589435!3d56.023474980626624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b52f3297da5abd%3A0x7dee441ab09d1250!2z0YPQuy4g0JvQtdGA0LzQvtC90YLQvtCy0LAsIDM3LCDQn9GD0YjQutC40L3Qviwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCAxNDEyMDc!5e0!3m2!1sru!2sua!4v1489136856070', width='100%', height='420', frameborder='0', style='border:0', allowfullscreen='')
+				.col-sm-4.col-xs-12
+					h3 Обратная связь
+					form
+						input(type="text" placeholder="Ваше имя")
+						input(type="text" placeholder="Связь с Вами: номер телефона, email, skype, icq")
+						select
+							option Тип выполняемых работ
+							option Тип 1
+							option Тип 1
+						textarea(placeholder="Сообщение...")
+						input.btn(type="submit")
