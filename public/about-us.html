@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/baguetteBox.min.css">
     <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/tingle.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800,900">
@@ -42,7 +43,7 @@
             <div class="col-md-11 col-sm-11 col-xs-12">
               <div class="row middle-xs center-xs">
                 <div class="col-md-3 col-sm-1 col-xs-12"></div>
-                <div class="col-md-4 col-sm-5 col-xs-12"><a class="btn" href="#">Скачать ТЗ</a><a class="btn" href="#">Заказать звонок</a></div>
+                <div class="col-md-4 col-sm-5 col-xs-12"><a class="btn" href="#">Скачать ТЗ</a><a class="btn button-callback" href="#">Заказать звонок</a></div>
                 <div class="col-md-2 col-sm-3 col-xs-12 flex middle-xs center-xs"><i class="icon-email"></i><span class="header__email">geo@pushkino-trest.ru</span></div>
                 <div class="col-md-3 col-sm-3 col-xs-12 flex middle-xs end-xs"><i class="icon-call"></i><span class="header__phone">8 495 201 13 12</span></div>
               </div>
@@ -171,12 +172,31 @@
         </div>
       </footer>
     </div>
+    <div class="callback" style="display: none;">
+      <h2>Заказать звонок</h2>
+      <div class="row center-xs">
+        <div class="col-xs-8 center-xs">
+          <form>
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Связь с Вами: номер телефона, email, skype, icq">
+            <select>
+              <option>Тип выполняемых работ</option>
+              <option>Тип 1</option>
+              <option>Тип 1</option>
+            </select>
+            <textarea placeholder="Сообщение..."></textarea>
+            <input class="btn" type="submit">
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/baguetteBox.min.js"></script>
     <script src="js/select2.full.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/slideout.min.js"></script>
+    <script src="js/tingle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

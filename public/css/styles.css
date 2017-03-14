@@ -555,11 +555,6 @@ i
     text-align: right;
 }
 
-.doc .btn
-{
-    width: 100%;
-}
-
 .doc ul li:before
 {
     content: none;
@@ -834,12 +829,20 @@ i
     color: #303030;
 }
 
-.contact-page form
+.contact-page__map
+{
+    margin-top: 47px;
+}
+
+.contact-page form,
+.tingle-modal-box form
 {
     width: 100%;
 }
 .contact-page form input,
-.contact-page form textarea
+.contact-page form textarea,
+.tingle-modal-box form input,
+.tingle-modal-box form textarea
 {
     font-size: 14px; 
 
@@ -853,7 +856,8 @@ i
     border-radius: 2px;
     background: transparent;
 }
-.contact-page form input[type='submit']
+.contact-page form input[type='submit'],
+.tingle-modal-box form input[type='submit']
 {
     float: right; 
 
@@ -862,54 +866,75 @@ i
     color: #fff;
     background: #42c0fb;
 }
-.contact-page form .select2-container
+.contact-page form .select2-container,
+.tingle-modal-box form .select2-container
 {
     width: 100% !important;
 }
-.contact-page form .select2-container--default .select2-selection--single
+.contact-page form .select2-container--default .select2-selection--single,
+.tingle-modal-box form .select2-container--default .select2-selection--single
 {
     height: 36px; 
 
     border: solid 1px #c0c0c0;
     border-radius: 2px;
 }
-.contact-page form .select2-container--default .select2-selection--single .select2-selection__rendered
+.contact-page form .select2-container--default .select2-selection--single .select2-selection__rendered,
+.tingle-modal-box form .select2-container--default .select2-selection--single .select2-selection__rendered
 {
     font-size: 14px;
     line-height: 34px;
 
-    letter-spacing: normal; 
+    text-align: left; 
+    letter-spacing: normal;
 
     color: #c0c0c0;
 }
-.contact-page form .select2-container .select2-selection--single .select2-selection__rendered
+.contact-page form .select2-container .select2-selection--single .select2-selection__rendered,
+.tingle-modal-box form .select2-container .select2-selection--single .select2-selection__rendered
 {
     padding: 0 15px;
 }
-.contact-page form .select2-container--default .select2-selection--single .select2-selection__arrow
+.contact-page form .select2-container--default .select2-selection--single .select2-selection__arrow,
+.tingle-modal-box form .select2-container--default .select2-selection--single .select2-selection__arrow
 {
     top: 5px;
 }
-.contact-page form ::-webkit-input-placeholder
+.contact-page form ::-webkit-input-placeholder,
+.tingle-modal-box form ::-webkit-input-placeholder
 {
     color: #c0c0c0;
 }
-.contact-page form ::-moz-placeholder
+.contact-page form ::-moz-placeholder,
+.tingle-modal-box form ::-moz-placeholder
 {
     color: #c0c0c0;
 }
-.contact-page form :-ms-input-placeholder
+.contact-page form :-ms-input-placeholder,
+.tingle-modal-box form :-ms-input-placeholder
 {
     color: #c0c0c0;
 }
-.contact-page form :-moz-placeholder
+.contact-page form :-moz-placeholder,
+.tingle-modal-box form :-moz-placeholder
 {
     color: #c0c0c0;
 }
 
-.contact-page__map
+.tingle-modal-box h2
 {
-    margin-top: 47px;
+    text-align: center;
+}
+
+.tingle-modal-box form input,
+.tingle-modal-box form textarea
+{
+    width: 100%;
+}
+
+.tingle-modal-box .btn
+{
+    margin: 0;
 }
 
 .articles-page__block__image

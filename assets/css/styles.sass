@@ -358,8 +358,6 @@ i
 
 //Докуметы
 .doc
-	.btn
-		width: 100%
 	ul li:before
 		content: none
 	img
@@ -532,6 +530,9 @@ i
 		font-weight: 400
 		color: $black
 		margin: 0 0 26px
+	&__map
+		margin-top: 47px
+.contact-page, .tingle-modal-box 
 	form
 		width: 100%
 		input, textarea
@@ -559,6 +560,7 @@ i
 			color: $pinkish-grey
 			font-size: 14px
 			letter-spacing: normal
+			text-align: left
 		.select2-container .select2-selection--single .select2-selection__rendered
 			padding: 0px 15px
 		.select2-container--default .select2-selection--single .select2-selection__arrow
@@ -571,9 +573,15 @@ i
 			color: $pinkish-grey
 		:-moz-placeholder
 			color: $pinkish-grey
-	&__map
-		margin-top: 47px
-
+//Callback
+.tingle-modal-box
+	h2 
+		text-align: center
+	form
+		input, textarea
+			width: 100%
+	.btn
+		margin: 0
 
 //Страница Наши статьи
 .articles-page

@@ -28,6 +28,7 @@ html(lang="ru")
 		link(rel="stylesheet", href="css/jquery-ui.min.css")
 		link(rel="stylesheet", href="css/baguetteBox.min.css")
 		link(rel="stylesheet", href="css/select2.min.css")
+		link(rel="stylesheet", href="css/tingle.min.css")
 		link(rel="stylesheet", href="css/styles.css")
 		link(rel="stylesheet", href="css/fonts.css")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800,900")
@@ -69,7 +70,7 @@ html(lang="ru")
 								.col-md-3.col-sm-1.col-xs-12
 								.col-md-4.col-sm-5.col-xs-12
 									a.btn(href="#") Скачать ТЗ
-									a.btn(href="#") Заказать звонок
+									a.btn.button-callback(href="#") Заказать звонок
 								.col-md-2.col-sm-3.col-xs-12.flex.middle-xs.center-xs
 									i.icon-email
 									span.header__email geo@pushkino-trest.ru
@@ -136,7 +137,20 @@ html(lang="ru")
 									a(href="").map-site Карта сайта
 					
 
-			
+		
+		.callback(style="display: none;")
+			h2 Заказать звонок
+			.row.center-xs
+				.col-xs-8.center-xs
+					form
+						input(type="text" placeholder="Ваше имя")
+						input(type="text" placeholder="Связь с Вами: номер телефона, email, skype, icq")
+						select
+							option Тип выполняемых работ
+							option Тип 1
+							option Тип 1
+						textarea(placeholder="Сообщение...")
+						input.btn(type="submit")
 		
 		script(src="js/jquery.min.js")
 		script(src="js/baguetteBox.min.js")
@@ -144,6 +158,7 @@ html(lang="ru")
 		script(src="js/jquery-ui.min.js")
 		script(src="js/swiper.min.js")
 		script(src="js/slideout.min.js")
+		script(src="js/tingle.min.js")
 		script(src="js/main.js")
 
 
